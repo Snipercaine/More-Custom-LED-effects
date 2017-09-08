@@ -7,6 +7,7 @@
   |______/  | _| `.__| \______/  |__|  |__|    /__/     \__\ \______/      |__|      \______/  |__|  |__| /__/     \__\  |__|     |__|  \______/  |__| \__|
 This is the code I use for my MQTT LED Strip controlled from Home Assistant. It's a work in progress, but works great! Huge shout out to all the people I copied ideas from as a scoured around the internet. If you recoginze your code here and want credit, let me know and I'll get that added. Cheers! 
 */
+//////MOD'd by DrZzs//////
 
 #include <Adafruit_NeoPixel.h>  //if the library names are not ORANGE then you need to load them in your IDE
 #include <ESP8266WiFi.h>
@@ -231,13 +232,10 @@ DEFINE_GRADIENT_PALETTE( Orange_to_Purple_gp ) {
 #define setcolorsub "bruh/mqttstrip/setcolor"
 #define setpowersub "bruh/mqttstrip/setpower"
 #define seteffectsub "bruh/mqttstrip/seteffect"
-#define seteffectsub2 "bruh/mqttstrip/seteffect2"
 #define setbrightness "bruh/mqttstrip/setbrightness"
-
 #define setcolorpub "bruh/mqttstrip/setcolorpub"
 #define setpowerpub "bruh/mqttstrip/setpowerpub"
 #define seteffectpub "bruh/mqttstrip/seteffectpub"
-#define seteffectpub2 "bruh/mqttstrip/seteffectpub2"
 #define setbrightnesspub "bruh/mqttstrip/setbrightnesspub"
 #define setanimationspeed "bruh/mqttstrip/setanimationspeed"
 
